@@ -1,0 +1,114 @@
+.dancing-cat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.dancing-cat {
+  width: 200px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.cat-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 춤추는 애니메이션 */
+.dancing-cat.dancing {
+  animation: danceBounce 0.6s ease-in-out infinite,
+             danceRotate 1.2s ease-in-out infinite;
+}
+
+/* 위아래 튀는 효과 */
+@keyframes danceBounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    transform: translateY(-15px) scale(1.05);
+  }
+  50% {
+    transform: translateY(0) scale(1);
+  }
+  75% {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+/* 회전 효과 */
+@keyframes danceRotate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+/* 댄스 지표 */
+.dance-indicator {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  min-height: 30px;
+  text-align: center;
+  animation: fadeInOut 2s ease-in-out infinite;
+}
+
+.dance-indicator.active {
+  animation: fadeInOut 1s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .dancing-cat {
+    width: 150px;
+    height: 180px;
+    padding: 15px;
+  }
+
+  .dance-indicator {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dancing-cat {
+    width: 120px;
+    height: 144px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .dance-indicator {
+    font-size: 0.9rem;
+  }
+}
