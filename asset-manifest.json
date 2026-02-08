@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.4807a7b2.css",
-    "main.js": "/static/js/main.14c822bf.js",
-    "static/js/453.c40e67e0.chunk.js": "/static/js/453.c40e67e0.chunk.js",
-    "static/media/cat.svg": "/static/media/cat.ed6565f93649612fa49db11588ec5500.svg",
-    "index.html": "/index.html",
-    "main.4807a7b2.css.map": "/static/css/main.4807a7b2.css.map",
-    "main.14c822bf.js.map": "/static/js/main.14c822bf.js.map",
-    "453.c40e67e0.chunk.js.map": "/static/js/453.c40e67e0.chunk.js.map"
+    "main.css": "/vyvyivy-cat-dancing-page/static/css/main.4807a7b2.css",
+    "main.js": "/vyvyivy-cat-dancing-page/static/js/main.9f93d58a.js",
+    "static/js/453.c40e67e0.chunk.js": "/vyvyivy-cat-dancing-page/static/js/453.c40e67e0.chunk.js",
+    "static/media/cat.svg": "/vyvyivy-cat-dancing-page/static/media/cat.ed6565f93649612fa49db11588ec5500.svg",
+    "index.html": "/vyvyivy-cat-dancing-page/index.html",
+    "main.4807a7b2.css.map": "/vyvyivy-cat-dancing-page/static/css/main.4807a7b2.css.map",
+    "main.9f93d58a.js.map": "/vyvyivy-cat-dancing-page/static/js/main.9f93d58a.js.map",
+    "453.c40e67e0.chunk.js.map": "/vyvyivy-cat-dancing-page/static/js/453.c40e67e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4807a7b2.css",
-    "static/js/main.14c822bf.js"
+    "static/js/main.9f93d58a.js"
   ]
 }
